@@ -1,6 +1,8 @@
 <div class="wrapper">
-
-  <div class="left">
+    <div class="mobile-menu-btn" (click)="menuOpen = !menuOpen">
+    {{ menuOpen ? '×' : '☰' }}
+    </div>
+  <div class="left" [class.open]="menuOpen">
     <a>HOME</a>
     <a>VIDEOS</a>
     <a>STORE</a>
@@ -9,58 +11,88 @@
     <a>TUMBLR</a>
   </div>
 
+  <div class="right">
+    <img
+      class="logo-image"
+      src="assets/Imad-logo.png"
+      alt="Imad logo"
+    />
+  </div>
+
   <div class="center-release">
 
-  <div class="covers">
+    <div class="covers">
 
-    <img
+      <img
         class="cover"
         src="assets/second-high.jpg"
         alt="Second high cover"
-    />
+      />
 
-    <img
+      <img
         class="cover second-cover"
         src="assets/second-high2.jpg"
         alt="Second high second cover"
-    />
+      />
 
-  </div>
+    </div>
 
-  <div class="release-info">
+    <div class="release-info">
 
       <p class="release-text">
-          'Second high' is out now &lt;3
+        'Second high' is out now &lt;3
       </p>
+
       <a
-        href="https://open.spotify.com/album/3DuSuUx9z56TBkgBOAIaIH"
-        target="_blank"
-        >
-      <button class="listen-btn">
-          Listen to "Second high"
-      </button>
+            href="https://linktr.ee/Imad4fs"
+            target="_blank"
+            >
+        <button class="listen-btn">
+            Listen to "Second high"
+        </button>
     </a>
-  </div>
+
+    </div>
 
     <nav class="socials">
-        <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank">Instagram</a>
-        <a href="https://www.tiktok.com/@YOUR_USERNAME" target="_blank">TikTok</a>
-        <a href="https://www.youtube.com/@YOUR_USERNAME" target="_blank">YouTube</a>
-        <a href="https://YOUR_USERNAME.tumblr.com" target="_blank">Tumblr</a>
-        <a href="https://open.spotify.com/artist/YOUR_ID" target="_blank">Spotify</a>
+
+      <a
+        href="https://www.instagram.com/imad4fs"
+        target="_blank"
+      >
+        Instagram
+      </a>
+
+      <a
+        href="https://www.tiktok.com/@imad4fs"
+        target="_blank"
+      >
+        TikTok
+      </a>
+
+      <a
+        href="https://www.youtube.com/@imad4fs"
+        target="_blank"
+      >
+        YouTube
+      </a>
+
+      <a
+        href="https://imadffs.tumblr.com"
+        target="_blank"
+      >
+        Tumblr
+      </a>
+
+      <a
+        href="https://open.spotify.com/artist/2ChDByaiLQitHbieJKsKiG"
+        target="_blank"
+      >
+        Spotify
+      </a>
+
     </nav>
-</div>
 
-  <div class="right">
-    <img
-        class="logo-image"
-        src="assets/Imad-logo.png"
-        alt="Imad logo"
-    />
-
-    <!-- <div class="subtitle">
-      songs / visuals / fragments
-    </div> -->
   </div>
 
 </div>
